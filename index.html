@@ -10,8 +10,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -121,8 +120,36 @@
                             <div class="caption">
                                 <h3>Hipster Ultimate</h3>
                                 <p>La camiseta ideal para el hipster.</p>
-                                <p><a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
-                                    <a href="#" class="btn btn-default" role="button">Detalles</a></p>
+                                <p><a href="#" class="btn btn-primary" role="button">$229 <span class="glyphicon glyphicon-shopping-cart"
+                                            aria-hidden="true"></span></a>
+                                    <a href="#camiseta1" class="btn btn-default" role="button" data-toggle="modal">Detalles</a></p>
+
+                                <!-- YB: Modal -->
+                                <div class="modal fade" id="camiseta1" role="dialog">
+                                    <div class="modal-dialog">
+
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                <h4 class="modal-title">Hipster Ultimate</h4>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item list-group-item-info"><span class="glyphicon glyphicon-info-sign"
+                                                            aria-hidden="true"></span> Este producto está agotado.</li>
+                                                </ul>
+                                                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="Camiseta1">
+                                                <p>Some text in the modal.</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -181,8 +208,8 @@
     </div>
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
