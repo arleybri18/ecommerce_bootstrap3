@@ -17,7 +17,7 @@
 <body>
     <!-- YB: Navbar -->
     <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
+        <div class="container">
             <div class="navbar-header">
                 <!-- YB: this section is for view the toggle button, is related with the id in the data-target-->
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -75,7 +75,7 @@
             <div class="col-sm-9 col-xs">
                 <div class="row">
 
-                    <!-- Carousel -->
+                    <!-- YB: Carousel -->
                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -126,26 +126,119 @@
 
                                 <!-- YB: Modal -->
                                 <div class="modal fade" id="camiseta1" role="dialog">
-                                    <div class="modal-dialog">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-sm-10">
+                                                <div class="modal-dialog">
 
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
+                                                    <!-- Modal content-->
+                                                    <div class="modal-content">
 
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h4 class="modal-title">Hipster Ultimate</h4>
-                                            </div>
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title">Hipster Ultimate</h4>
+                                                        </div>
 
-                                            <div class="modal-body">
-                                                <ul class="list-group">
-                                                    <li class="list-group-item list-group-item-info"><span class="glyphicon glyphicon-info-sign"
-                                                            aria-hidden="true"></span> Este producto está agotado.</li>
-                                                </ul>
-                                                <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" alt="Camiseta1">
-                                                <p>Some text in the modal.</p>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                        <div class="modal-body">
+                                                            <ul class="list-group">
+                                                                <li class="list-group-item list-group-item-info"><span
+                                                                        class="glyphicon glyphicon-info-sign"
+                                                                        aria-hidden="true"></span> Este producto está
+                                                                    agotado.</li>
+                                                            </ul>
+
+                                                            <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <img src="https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg"
+                                                                        alt="Camiseta1" class="img-thumbnail">
+                                                                </div>
+                                                                <div class="col-sm-6 descriptions">
+                                                                    <p>Precio: $200</p>
+                                                                    <p class="lbl_clasificacion">Clasificación:</p>
+                                                                    <p class="lbl_clasificacion">
+                                                                        <form id="form">
+                                                                            <p class="clasificacion">
+                                                                                <input id="radio1" type="radio" name="estrellas"
+                                                                                    value="5">
+                                                                                <label for="radio1">&#9733;</label>
+                                                                                <input id="radio2" type="radio" name="estrellas"
+                                                                                    value="4">
+                                                                                <label for="radio2">&#9733;</label>
+                                                                                <input id="radio3" type="radio" name="estrellas"
+                                                                                    value="3">
+                                                                                <label for="radio3">&#9733;</label>
+                                                                                <input id="radio4" type="radio" name="estrellas"
+                                                                                    value="2">
+                                                                                <label for="radio4">&#9733;</label>
+                                                                                <input id="radio5" type="radio" name="estrellas"
+                                                                                    value="1">
+                                                                                <label for="radio5">&#9733;</label>
+                                                                            </p>
+                                                                        </form>
+                                                                    </p>
+                                                                    <p>
+                                                                        <button class="btn btn-warning btn-xs btnmodal"><b>Hispter</b></button>
+                                                                        <button class="btn btn-xs btnmodal"><b>Deportiva</b></button></li>
+                                                                    </p>
+                                                                    <p class="text-primary"><span class="glyphicon glyphicon-heart"></span>
+                                                                        Agregar
+                                                                        a los deseos
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div role="tabpanel">
+                                                                        <ul class="nav nav-tabs" role="tablist">
+                                                                            <li role="presentation" class="active">
+                                                                                <a href="#description" aria-controls="description"
+                                                                                    data-toggle="tab" role="tab">Descripción</a>
+                                                                            </li>
+                                                                            <li role="presentation">
+                                                                                <a href="#comments" aria-controls="comments"
+                                                                                    data-toggle="tab" role="tab">Comentarios</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="tab-content">
+                                                                            <div role="tab-panel" class="tab-pane active"
+                                                                                id="description">
+                                                                                <p>Lorem, ipsum dolor sit amet
+                                                                                    consectetur adipisicing elit. Culpa
+                                                                                    sapiente
+                                                                                    ipsa fuga exercitationem
+                                                                                    accusantium dolore est! Possimus
+                                                                                    aperiam
+                                                                                    reiciendis facilis nesciunt minus!
+                                                                                    Qui maiores sunt odit
+                                                                                    ducimus ipsum
+                                                                                    hic delectus.</p>
+                                                                            </div>
+                                                                            <div role="tab-panel" class="tab-pane" id="comments">
+                                                                                <div class="panel-group">
+                                                                                    <div class="panel panel-default">
+                                                                                        <div class="panel-heading">Yony Briñez comentó hace 2
+                                                                                            diás</div>
+                                                                                        <div class="panel-body">Está
+                                                                                            camiseta esta increíble, la
+                                                                                            quiero!</div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <textarea class="form-control" rows="4"
+                                                                                        placeholder="Ingresa tu comentario"></textarea>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                                            <button type="button" class="btn btn-primary">Comprar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
